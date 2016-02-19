@@ -1,0 +1,11 @@
+Tue Feb  9 13:54:50 2016
+xAss65: Pass 1: src/SB02.s
+xAss65: Pass 2:
+Statistics:
+        0 of     5000 label used
+        0 of    40000 byte label-memory used
+        0 of     2340 PP-defs used
+        0 of    40000 byte PP-memory used
+       24 of   200000 byte buffer memory used
+        0 blocks used
+        0 seconds used

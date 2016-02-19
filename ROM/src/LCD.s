@@ -11,15 +11,11 @@
 
 
 
-ZPDATA    EQU $00             ;zero-page data area
 LCD       EQU $D300           ;LCD module address
 
           ORG LCD
 LCD0      .ds 1
 LCD1      .ds 1
-
-          ORG ZPDATA
-MSGBASE   .ds 2     ;address of message to print on LCD
 
 
 
@@ -52,8 +48,6 @@ LINIT0    LDA #$38            ;function set: 8 bit, 2 lines, 5x7
           STA LCD0
           JSR LCDBUSY
           RTS
-LINITMSG  fcs "LCD init done. "
-          .byte $00
           
 ; *** Clear LCD display and return cursor to home
 ; registers preserved
